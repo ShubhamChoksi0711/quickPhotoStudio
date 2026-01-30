@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Hero from "./components/home/Hero";
 import Directions from "./components/directions/Directions";
-
+import Pricing from "./components/pricing/Pricing";
+import Headshot from "./components/headhsots/Headshot";
+import Services from "./components/services/Services";
+import Whyus from "./components/WhyUs/Whyus";
+import FAQ from "./components/faq/FAQ";
 export default function Home() {
   return (
   <main>
@@ -17,18 +21,30 @@ export default function Home() {
 
       {/* Pricing content */}        
       <section id="pricing" className="min-h-screen">
-        <h1>pricing</h1>
+        <Pricing />
       </section>
 
-      {/* Appointment content */}
-      <section id="appointment" className="min-h-screen">
-        <h1>appointment</h1>  
+      {/* Headshot content */}
+      <section id="headshot" className="min-h-screen">
+        <Headshot />
+      </section>
+
+      {/* services content */}
+      <section id="services" className="min-h-screen">
+        <Services />
       </section>
       
-      {/* Contact content */}
-      <section id="contact" className="min-h-screen">
-        <h1>contact us</h1>
+      {/* WhyUS content */}
+      <section id="whyus" className="min-h-screen">
+        <Whyus />
       </section>
+
+      {/* FAQ content */}
+      <section id="faq" className="min-h-screen">
+        <FAQ />
+      </section>
+
+
     </main>
   );
 }
