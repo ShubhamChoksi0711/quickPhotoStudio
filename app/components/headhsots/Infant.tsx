@@ -9,7 +9,7 @@ export default function CenteredImageSection() {
             <div className="relative animate-fadeIn" style={{ animationDelay: '0.5s' }}>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-blue-900 transform transition-transform duration-500 hover:scale-105">
                 <img
-                  src="/images/Infant.png"
+                  src="/images/infant.png"
                   alt="Professional headshot example"
                   className="w-full h-auto object-cover"
                 />
