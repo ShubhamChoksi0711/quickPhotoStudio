@@ -130,6 +130,27 @@ export default function WhyUsAndReviews() {
             })}
           </div>
 
+          {/* Quality Comparison Image */}
+          <div className="mt-12 animate-fadeIn" style={{ animationDelay: '0.6s' }}>
+            <div className="bg-white rounded-2xl p-8 border-4 border-blue-900 shadow-2xl">
+              <div className="text-center mb-6">
+                <h3 className="text-3xl font-bold text-gray-900 mb-3">
+                  See The <span className="text-blue-900">Difference</span>
+                </h3>
+                <p className="text-gray-700 text-lg">
+                  Professional lighting and expert techniques make all the difference
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <img 
+                  src="/images/Whyus.png" 
+                  alt="Low Quality vs High Quality Photo Comparison" 
+                  className="rounded-xl shadow-lg max-w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* Special Feature Highlight */}
           <div className="mt-12 bg-white border-4 border-blue-900 rounded-2xl p-8 shadow-2xl animate-fadeIn" style={{ animationDelay: '0.7s' }}>
             <div className="text-center mb-6">
@@ -157,7 +178,7 @@ export default function WhyUsAndReviews() {
             </div>
             <div className="flex items-center justify-center gap-2 mb-4">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-8 w-8 fill-yellow-500 text-yellow-500 animate-pulse" style={{ animationDelay: `${i * 0.1}s` }} />
+                <Star key={i} className="h-8 w-8 fill-amber-500 text-amber-600 animate-pulse" style={{ animationDelay: `${i * 0.1}s` }} />
               ))}
               <span className="text-white text-2xl font-bold ml-2 drop-shadow-md">5.0</span>
             </div>
@@ -177,7 +198,7 @@ export default function WhyUsAndReviews() {
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
+                    <Star key={i} className="h-5 w-5 fill-amber-500 text-amber-600" />
                   ))}
                 </div>
 

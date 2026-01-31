@@ -31,13 +31,11 @@ export default function Headshots() {
                 <div className="inline-flex items-center justify-center gap-2 mb-4">
                   <Sparkles className="h-8 w-8 text-blue-900 animate-pulse" />
                   <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                    Personal Headshots
+                    Personal Headshots | Graduation photos
                   </h2>
                   <Sparkles className="h-8 w-8 text-blue-900 animate-pulse" />
                 </div>
-                <p className="text-blue-900 text-lg font-semibold">
-                  Graduation Photos
-                </p>
+
               </div>
 
               {/* Pricing Options */}
@@ -108,30 +106,33 @@ export default function Headshots() {
             </div>
           </div>
 
-          {/* Right Side - Infant Photos Image */}
-          <div className="relative animate-fadeInRight">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-blue-900 transform transition-transform duration-500 hover:scale-105">
-              <img
-                src="/images/infant.png"
-                alt="Adorable infant photo session"
-                className="w-full h-auto object-cover"
-              />
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-amber-900/70 via-transparent to-transparent"></div>
-              
-              {/* Text overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-center">
-                <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">
-                  Infant Photography
-                </h3>
-                <p className="text-white text-lg font-semibold drop-shadow-md">
-                  We specialize in infant photos (0-2 years)
-                </p>
+          {/* Right Side - Two Images */}
+          <div className="space-y-6 animate-fadeInRight">
+            {/* Second Image - Add your second photo here */}
+            <div className="relative animate-fadeIn" style={{ animationDelay: '0.5s' }}>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-blue-900 transform transition-transform duration-500 hover:scale-105">
+                <img
+                  src="/images/Graduation.png"
+                  alt="Professional headshot example"
+                  className="w-full h-auto object-cover"
+                />
+                {/* Overlay gradient */}
+                
+                {/* Text overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                  <h3 className="text-2xl font-bold text-white mb-1 drop-shadow-lg">
+                    Professional Headshots
+                  </h3>
+                  <p className="text-white text-base font-semibold drop-shadow-md">
+                    Perfect for LinkedIn & portfolios
+                  </p>
+                </div>
               </div>
+              
+              {/* Decorative glow */}
+              <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-blue-900/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
             </div>
-            
-            {/* Decorative glow */}
-            <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-blue-900/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+
           </div>
 
         </div>

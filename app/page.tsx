@@ -6,6 +6,7 @@ import Headshot from "./components/headhsots/Headshot";
 import Services from "./components/services/Services";
 import Whyus from "./components/WhyUs/Whyus";
 import FAQ from "./components/faq/FAQ";
+import Infant from "./components/headhsots/Infant";
 export default function Home() {
   return (
   <main>
@@ -28,6 +29,9 @@ export default function Home() {
       <section id="headshot" className="min-h-screen">
         <Headshot />
       </section>
+
+      <Infant />
+
 
       {/* services content */}
       <section id="services" className="min-h-screen">

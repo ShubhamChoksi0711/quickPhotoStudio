@@ -9,13 +9,20 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-white z-10">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fadeIn drop-shadow-lg">
-              Professional
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-snug mb-4 animate-fadeIn drop-shadow-lg">
+              Professional Passport and ID Photos:
               <br />
-              & Guaranteed
+              <span className="font-light">Ready in just minutes</span>
               <br />
-              <span className="text-blue-900 italic drop-shadow-lg">images here</span>
+              <span className="text-blue-900 text-2xl sm:text-3xl lg:text-4xl drop-shadow-lg">— 100% Acceptance Guaranteed</span>
             </h1>
+            
+            <p className="text-xl sm:text-2xl lg:text-3xl font-semibold mt-6 mb-2 drop-shadow-md">
+              Kitchener-Waterloo's
+            </p>
+            <p className="text-base sm:text-lg lg:text-xl font-light drop-shadow-md opacity-95">
+              trusted choice for affordable, compliant and high quality photo services
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a

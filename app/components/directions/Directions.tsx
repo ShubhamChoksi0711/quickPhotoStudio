@@ -1,5 +1,5 @@
 'use client'
-import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
+import { MapPin, Clock, Phone, Navigation,Mail  } from 'lucide-react';
 
 export default function Directions() {
   const address = "104-22 King St S, Waterloo, ON N2J 1N8, Canada";
@@ -36,7 +36,7 @@ export default function Directions() {
               </div>
 
               {/* Hours */}
-              <div className="flex items-start gap-4 transform transition-all duration-300 hover:translate-x-2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
+              <div className="flex pt-4 items-start gap-4 transform transition-all duration-300 hover:translate-x-2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
                 <div className="bg-blue-900 p-3 rounded-lg flex-shrink-0 shadow-lg transition-transform duration-300 hover:scale-110">
                   <Clock className="h-6 w-6" />
                 </div>
@@ -50,8 +50,21 @@ export default function Directions() {
                 </div>
               </div>
 
+              {/* Mail */}
+              <div className="flex pt-4 items-start gap-4 transform transition-all duration-300 hover:translate-x-2 animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
+                <div className="bg-blue-900 p-3 rounded-lg flex-shrink-0 shadow-lg transition-transform duration-300 hover:scale-110">
+                  <Mail className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-1 text-white">Email</h3>
+                  <p className="text-white/90">
+                    <a href="mailto:quickphotostudioltd@gmail.com" className="text-blue-900 hover:text-blue-800 transition-colors">quickphotostudioltd@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+
               {/* Phone */}
-              <div className="flex items-start gap-4 transform transition-all duration-300 hover:translate-x-2 animate-slideInLeft" style={{ animationDelay: '0.3s' }}>
+              <div className="flex pt-4 items-start gap-4 transform transition-all duration-300 hover:translate-x-2 animate-slideInLeft" style={{ animationDelay: '0.3s' }}>
                 <div className="bg-blue-900 p-3 rounded-lg flex-shrink-0 shadow-lg transition-transform duration-300 hover:scale-110">
                   <Phone className="h-6 w-6" />
                 </div>
@@ -83,7 +96,7 @@ export default function Directions() {
               <div className="pt-6 border-t border-white/30 animate-slideInLeft" style={{ animationDelay: '0.5s' }}>
                 <p className="text-white/90 italic">
                   Walk-ins welcome! No appointment necessary.<br />
-                  Free parking available at the rear of the building.
+                  2hrs Free street parking or behind waterloo square.
                 </p>
               </div>
             </div>

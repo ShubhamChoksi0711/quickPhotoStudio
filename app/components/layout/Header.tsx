@@ -38,14 +38,14 @@ export default function Header() {
 
   return (
     <header 
-      className={`sticky top-0 z-50 transition-all duration-500 ${
+      className={`top-0 z-50 transition-all duration-500 ${
         isScrolled 
           ? 'bg-yellow-400 shadow-lg' 
           : 'bg-yellow-400 shadow-md'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <nav className="max-w-auto mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center">
           {/* Logo */}
           <a 
             href="#home" 
@@ -55,7 +55,7 @@ export default function Header() {
             <img 
               src="/images/logo-bg.png" 
               alt="Logo" 
-              className="h-15 w-auto transition-transform duration-300 hover:rotate-3"
+              className="h-30 w-auto transition-transform duration-300 hover:rotate-3"
             />
           </a>
 

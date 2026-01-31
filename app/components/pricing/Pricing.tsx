@@ -111,7 +111,7 @@ export default function Pricing() {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
-            Simple & <span className="text-blue-900">Transparent Pricing</span>
+            <span className="text-blue-900">Pricing</span>
           </h2>
           <p className="text-white/90 text-lg max-w-2xl mx-auto">
             Professional photo services at affordable prices. All packages include high-quality prints and digital copies.
