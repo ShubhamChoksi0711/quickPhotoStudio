@@ -19,7 +19,7 @@ export default function Pricing() {
    const appointmentOptions = [
     {
       title: '1 Person',
-      subtitle: '~ 5 minutes',
+      subtitle: '~ 30 minutes',
       eventType: '30min'
     },
     {
