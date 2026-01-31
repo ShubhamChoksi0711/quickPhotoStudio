@@ -43,7 +43,7 @@ export default function Directions() {
                 <div>
                   <h3 className="font-semibold text-lg mb-1 text-white">Business Hours</h3>
                   <p className="text-white/90">
-                    Monday - Friday: 9:00 AM - 6:00 PM<br />
+                    Monday - Friday: 8:00 AM - 8:00 PM<br />
                     Saturday: 9:00 AM - 6:00 PM<br />
                     Sunday: Closed
                   </p>

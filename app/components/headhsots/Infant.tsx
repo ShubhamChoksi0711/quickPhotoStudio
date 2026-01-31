@@ -15,15 +15,7 @@ export default function CenteredImageSection() {
                 />
                 {/* Overlay gradient */}
                 
-                {/* Text overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                  <h3 className="text-2xl font-bold text-white mb-1 drop-shadow-lg">
-                    Professional Headshots
-                  </h3>
-                  <p className="text-white text-base font-semibold drop-shadow-md">
-                    Perfect for LinkedIn & portfolios
-                  </p>
-                </div>
+               
               </div>
               
               {/* Decorative glow */}

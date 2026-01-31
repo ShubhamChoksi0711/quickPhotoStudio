@@ -53,7 +53,7 @@ export default function Header() {
             onClick={() => scrollToSection('home')}
           >
             <img 
-              src="/images/logo-bg.png" 
+              src="/images/logo.png" 
               alt="Logo" 
               className="h-30 w-auto transition-transform duration-300 hover:rotate-3"
             />
