@@ -112,7 +112,7 @@ export default function Headshots() {
           <div className="relative animate-fadeInRight">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-blue-900 transform transition-transform duration-500 hover:scale-105">
               <img
-                src="/images/infant-photos.jpg"
+                src="/images/infant.png"
                 alt="Adorable infant photo session"
                 className="w-full h-auto object-cover"
               />

@@ -49,13 +49,13 @@ export default function Header() {
           {/* Logo */}
           <a 
             href="#home" 
-            className="flex items-center transform transition-all duration-300 hover:scale-110" 
+            className=" transform transition-all duration-300 hover:scale-110" 
             onClick={() => scrollToSection('home')}
           >
             <img 
-              src="/images/logo.png" 
+              src="/images/logo-bg.png" 
               alt="Logo" 
-              className="h-10 w-auto transition-transform duration-300 hover:rotate-3"
+              className="h-15 w-auto transition-transform duration-300 hover:rotate-3"
             />
           </a>
 

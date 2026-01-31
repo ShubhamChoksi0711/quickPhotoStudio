@@ -58,10 +58,10 @@ export default function Directions() {
                 <div>
                   <h3 className="font-semibold text-lg mb-1 text-white">Contact</h3>
                   <a 
-                    href="tel:5482552036" 
+                    href="tel:3658821308" 
                     className="text-blue-900 hover:text-blue-800 transition-colors font-semibold"
                   >
-                    (548) 255-2036
+                    (365) 882-1308
                   </a>
                 </div>
               </div>
@@ -89,16 +89,19 @@ export default function Directions() {
             </div>
           </div>
 
-          {/* Right Image */}
+          {/* Right Map */}
           <div className="relative animate-fadeInRight">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
-              <img
-                src="/images/PhotoStudio.png"
-                alt="Our Waterloo store location"
-                className="w-full h-auto object-cover"
-              />
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 to-transparent"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105 h-[500px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.8!2d-80.5204!3d43.4643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf3f7e1e1e1e1%3A0x1234567890!2s104-22%20King%20St%20S%2C%20Waterloo%2C%20ON%20N2J%201N8!5e0!3m2!1sen!2sca!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="sepia-[0.2] brightness-100"
+              ></iframe>
             </div>
             
             {/* Decorative element */}
@@ -107,19 +110,7 @@ export default function Directions() {
           </div>
         </div>
 
-        {/* Google Maps Embed */}
-        <div className="mt-16 rounded-2xl overflow-hidden shadow-2xl animate-fadeIn border-4 border-white/20 transition-transform duration-300 hover:scale-[1.02]" style={{ animationDelay: '0.6s' }}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.8!2d-80.5204!3d43.4643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf3f7e1e1e1e1%3A0x1234567890!2s104-22%20King%20St%20S%2C%20Waterloo%2C%20ON%20N2J%201N8!5e0!3m2!1sen!2sca!4v1234567890"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="sepia-[0.3] brightness-95"
-          ></iframe>
-        </div>
+       
       </div>
       <style jsx>{`
                 @keyframes fadeIn {

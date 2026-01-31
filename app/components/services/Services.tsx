@@ -82,10 +82,10 @@ export default function PhotoServices() {
             We handle all types of ID photos. Give us a call to discuss your specific requirements.
           </p>
           <a
-            href="tel:5482552036"
+            href="tel:3658821308"
             className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1"
           >
-            Call (548) 255-2036
+            Call (365) 882-1308
           </a>
         </div>
 

@@ -1,7 +1,49 @@
 'use client'
 import { Check, Calendar } from 'lucide-react';
+import { PopupModal } from 'react-calendly';
+import { useState, useEffect  } from 'react';
+import { SelectionModal } from './SelectionModal ';
 
 export default function Pricing() {
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [isSelectionOpen, setIsSelectionOpen] = useState(false);
+  const [selectedEventType, setSelectedEventType] = useState('');
+  const [rootElement, setRootElement] = useState<HTMLElement | null>(null);
+  const baseUsername = 'quickphotostudioltd';
+
+  useEffect(() => {
+    setRootElement(document.body);
+  }, []);
+
+
+   const appointmentOptions = [
+    {
+      title: '1 Person',
+      subtitle: '~ 5 minutes',
+      eventType: '30min'
+    },
+    {
+      title: '2 - 4 People',
+      subtitle: '~ 20 minutes',
+      eventType: '2-4-people-20-minutes'
+    },
+    {
+      title: '5 - 8 People',
+      subtitle: '~ 35 minutes',
+      eventType: '5-8-people-35-minutes'
+    },
+    {
+      title: 'Baby (0-2 Years Old)',
+      subtitle: '~ 25 minutes',
+      eventType: 'baby-25-minutes'
+    },
+    {
+      title: 'Baby & Parents',
+      subtitle: '~ 30 minutes',
+      eventType: 'baby-parents-30-minutes'
+    }
+  ];
+
   const pricingPlans = [
     {
       title: "Passport Photos",
@@ -48,10 +90,16 @@ export default function Pricing() {
     }
   ];
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    element?.scrollIntoView({ behavior: 'smooth' });
+    const openSelectionModal = () => {
+    setIsSelectionOpen(true);
   };
+
+  // When user selects an option from the modal
+  const handleOptionSelect = (eventType: string) => {
+    setSelectedEventType(eventType);
+    setIsCalendlyOpen(true);
+  };
+
 
   return (
     <section id="pricing" className="min-h-screen bg-gradient-to-br from-amber-300 via-yellow-400 to-amber-500 py-20 lg:py-32 relative overflow-hidden">
@@ -135,7 +183,7 @@ export default function Pricing() {
 
               {/* Button */}
               <button
-                onClick={scrollToContact}
+                onClick={openSelectionModal}
                 className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-xl transform hover:-translate-y-1 ${
                   plan.popular
                     ? 'bg-blue-900 text-white hover:bg-blue-800'
@@ -148,6 +196,23 @@ export default function Pricing() {
             </div>
           ))}
         </div>
+
+                {/* Selection Modal */}
+        <SelectionModal
+          isOpen={isSelectionOpen}
+          onClose={() => setIsSelectionOpen(false)}
+          onSelect={handleOptionSelect}
+          options={appointmentOptions}
+        />
+
+        {rootElement && (
+          <PopupModal
+            url={`https://calendly.com/${baseUsername}/${selectedEventType}`}
+            onModalClose={() => setIsCalendlyOpen(false)}
+            open={isCalendlyOpen}
+            rootElement={rootElement}
+          />
+        )}
 
         <div className="mt-16 text-center animate-fadeIn" style={{ animationDelay: '0.5s' }}>
           <p className="text-white/90 text-sm mb-6">

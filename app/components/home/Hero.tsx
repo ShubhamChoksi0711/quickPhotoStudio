@@ -1,6 +1,8 @@
 'use client'
 import { Phone } from 'lucide-react';
+
 export default function Hero() {
+
   return (
     <section id="home" className="min-h-screen bg-gradient-to-br from-amber-300 via-yellow-400 to-amber-500 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
@@ -17,7 +19,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a
-                href="tel:5482552036"
+                href="tel:3658821308"
                 className="bg-blue-900 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-all duration-300 flex items-center justify-center gap-3 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1 animate-slideInLeft"
               >
                 <Phone className="h-5 w-5 animate-pulse" />
@@ -26,7 +28,7 @@ export default function Hero() {
               
               <button
                 onClick={() => {
-                  const element = document.getElementById('appointment');
+                  const element = document.getElementById('pricing');
                   element?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-blue-900 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1 animate-slideInRight"
@@ -37,12 +39,12 @@ export default function Hero() {
           </div>
 
           {/* Right Image */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-1/2 flex items-center justify-center">
-            <div className="relative w-full h-full flex items-center justify-end animate-fadeInRight">
+          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:w-1/2 flex items-start justify-center lg:justify-end lg:pt-0">
+            <div className="relative w-full h-auto max-w-lg lg:max-w-full animate-fadeInRight">
               <img
                 src="/images/WomenPassport.png"
-                alt="Professional photographer with camera and passport"
-                className="w-full h-auto max-w-lg lg:max-w-none lg:h-full object-cover rounded-lg lg:rounded-none shadow-2xl transition-transform duration-500 hover:scale-105"
+                alt="Perfect Headshot"
+                className="w-full h-auto object-contain object-top rounded-lg lg:rounded-none shadow-2xl transition-transform duration-500 hover:scale-105"
               />
               {/* Decorative border effect */}
               <div className="absolute inset-0 border-4 border-blue-900 rounded-lg lg:rounded-none opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
@@ -50,9 +52,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Decorative gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-amber-400 via-transparent to-transparent pointer-events-none"></div>
       
       {/* Animated background circles */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-blue-900 rounded-full opacity-10 blur-3xl animate-float"></div>
